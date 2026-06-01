@@ -12,21 +12,17 @@ Foreman turns the projects a user has worked on with Claude into a calm, sandy 3
 It runs entirely on the user's machine and uses **their own Claude Code subscription** (via `claude -p`) — no API key, and their source never leaves the machine.
 
 ```bash
-foreman serve      # serve the already-generated kingdom immediately — fast, for iterating
-foreman            # regenerate estates from Claude memory first, then serve
-foreman generate   # (re)generate estates only
-foreman publish    # share it as a public URL (GitHub Pages)
+npx foreman-kingdom        # regenerate estates from Claude memory first, then serve
+npx foreman-kingdom serve  # serve the already-generated kingdom immediately — fast, for iterating
 ```
 
-Prefer **`foreman serve`** when you just want to open the existing kingdom quickly. Use **`foreman`** (no arg) when you want to pull in new projects or refresh the plaques.
-
-> **Note:** The published distribution will use `npx foreman` once the package is on npm. For now the global `foreman` command is installed locally via `npm link`.
+Prefer **`npx foreman-kingdom serve`** when you just want to open the existing kingdom quickly. Use **`npx foreman-kingdom`** (no arg) when you want to pull in new projects or refresh the plaques.
 
 After it serves, tell the user to open **http://localhost:5173** and explore:
 - **WASD / arrows** roam · **drag** look · **scroll** zoom
 - **E** to tour an estate (its walkable README) · **V** first-person · **M** map
 
 ## Notes
-- If `claude` isn't on PATH, Foreman prints an install hint (https://claude.com/code) and stops — it needs Claude Code to describe each project.
+- Requires **Claude Code** installed (`claude` on PATH — https://claude.com/code). Foreman uses `claude -p` to describe each project; if `claude` isn't found it prints an install hint and stops.
 - The kingdom is sourced from the projects Claude remembers (local Claude memory); only project paths and safe activity fields are read, never auth tokens.
 - It's honest: every plaque/feature is derived from the real repo.
