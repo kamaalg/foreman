@@ -1,0 +1,17 @@
+{
+  "name": "foreman",
+  "description": "Turn the projects you build with Claude into a walkable voxel kingdom — each repo becomes an estate with an honest plaque and a walkable README. Runs locally on your own Claude Code; your source never leaves your machine.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kamal Gurbanov"
+  },
+  "homepage": "https://github.com/kamaalg/foreman",
+  "keywords": [
+    "visualization",
+    "showcase",
+    "projects",
+    "voxel",
+    "kingdom",
+    "three.js"
+  ]
+}

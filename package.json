@@ -1,0 +1,49 @@
+{
+  "name": "foreman-kingdom",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Turn your git repos into a walkable voxel kingdom — runs locally on your own Claude Code.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamaalg/foreman.git"
+  },
+  "homepage": "https://github.com/kamaalg/foreman",
+  "keywords": [
+    "visualization",
+    "projects",
+    "voxel",
+    "kingdom",
+    "three.js",
+    "claude-code"
+  ],
+  "bin": {
+    "foreman": "bin/foreman.mjs",
+    "foreman-kingdom": "bin/foreman.mjs"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "kingdom": "node scripts/build-kingdom.mjs",
+    "panels": "node scripts/build-panels.mjs",
+    "foreman": "node bin/foreman.mjs"
+  },
+  "files": [
+    "bin",
+    "scripts",
+    "js/actors.js",
+    "js/buildings.js",
+    "js/data.js",
+    "js/image-slot.js",
+    "js/interior.js",
+    "js/main.js",
+    "js/plaques.js",
+    "js/readme.js",
+    "js/world.js",
+    "js/foreman.mjs",
+    "css",
+    "index.html",
+    "foreman-plugin",
+    "README.md",
+    "LICENSE"
+  ]
+}

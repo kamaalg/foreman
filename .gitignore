@@ -1,0 +1,46 @@
+node_modules
+.next
+dist
+build
+.turbo
+
+# env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# python
+__pycache__
+*.pyc
+.venv
+venv
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# logs
+logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode
+
+# coverage / artifacts
+coverage
+playwright-report
+test-results
+.next-cache
+
+# docker
+*.pid
+
+# generated personal data — never commit real project data
+js/data.js
+js/panels.js
+js/panels/manifest.json

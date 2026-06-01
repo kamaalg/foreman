@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Foreman — a kingdom of your projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@400;500;600;700&family=Spectral:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="scene"></div>
+<div id="plaques"></div>
+<div id="fade"></div>
+
+<!-- top-left brand -->
+<div id="hud">
+  <div class="plate">
+    <div class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-5h-6v5H5a1 1 0 0 1-1-1z" fill="#fff"/></svg></span>
+      FOREMAN <small>KINGDOM</small>
+    </div>
+    <div class="hint">
+      <span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span> roam · <b>drag</b> look · <b>scroll</b> zoom<br/>
+      walk up to an estate, press <span class="key">E</span> to tour it · <span class="key">V</span> first-person · <span class="key">M</span> for the map
+    </div>
+  </div>
+</div>
+
+<!-- bottom dock -->
+<div id="dock">
+  <div class="pill"><span class="dot"></span><span id="dockTxt">7 estates</span></div>
+  <button class="ghostbtn" id="mapBtn">⤢ Survey the kingdom <span class="key" style="margin-left:4px">M</span></button>
+</div>
+
+<!-- press-E prompt -->
+<div id="prompt"></div>
+
+<!-- ════ THE WALKABLE README ════ -->
+<div id="readme" aria-hidden="true">
+  <div class="rmBg"></div>
+  <div class="rmVignette"></div>
+  <button class="rmExit" id="rmExit">‹ Back to the kingdom</button>
+  <div class="rmCrumb" id="rmCrumb"></div>
+
+  <div class="rmStage">
+    <div class="rmTrack" id="rmTrack"><!-- stations injected --></div>
+    <!-- walking avatar along the floor -->
+    <div class="rmFloor"></div>
+    <div class="rmWalker" id="rmWalker">
+      <span class="w-head"></span><span class="w-body"></span>
+      <span class="w-leg l"></span><span class="w-leg r"></span>
+    </div>
+  </div>
+
+  <div class="rmNav">
+    <button class="rmArrow" id="rmPrev" aria-label="previous">‹</button>
+    <div class="rmDots" id="rmDots"></div>
+    <button class="rmArrow" id="rmNext" aria-label="next">›</button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/three@0.150.1/build/three.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/world.js"></script>
+<script src="js/buildings.js"></script>
+<script src="js/actors.js"></script>
+<script src="js/image-slot.js"></script>
+<script src="js/plaques.js"></script>
+<script src="js/readme.js"></script>
+<script src="js/panels.js"></script>
+<script src="js/interior.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

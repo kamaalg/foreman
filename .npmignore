@@ -1,0 +1,27 @@
+# private docs and media
+docs/
+screenshots/
+uploads/
+logs/
+
+# generated personal data
+js/data.js
+js/panels.js
+js/panels/
+js/data.sample.js
+
+# dev/build artifacts
+node_modules/
+.git/
+.env
+.env.local
+.env.*.local
+
+# lock files and OS
+package-lock.json
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/

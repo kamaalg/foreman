@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "foreman-kingdom",
+  "description": "Foreman — turn the projects you build with Claude into a walkable voxel kingdom.",
+  "owner": {
+    "name": "Kamal Gurbanov"
+  },
+  "plugins": [
+    {
+      "name": "foreman",
+      "description": "Turn the projects you build with Claude into a walkable voxel kingdom — each repo becomes an estate with an honest plaque and a walkable README. Runs locally on your own Claude Code; your source never leaves your machine.",
+      "author": {
+        "name": "Kamal Gurbanov"
+      },
+      "category": "visualization",
+      "source": "./foreman-plugin",
+      "homepage": "https://github.com/kamaalg/foreman"
+    }
+  ]
+}
