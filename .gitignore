@@ -40,7 +40,5 @@ test-results
 # docker
 *.pid
 
-# generated personal data — never commit real project data
-js/data.js
-js/panels.js
+# generated personal data (only exclude manifest; data.js ships as sample)
 js/panels/manifest.json
